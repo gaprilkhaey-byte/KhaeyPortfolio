@@ -1,0 +1,817 @@
+
+/* 
+akong peg diri sir kay elegant, minimalist ngana so ang color palette na gihatag ni gpt kay kani silaa charrr btaw thankyou AI char joke 
+  
+   Forest Green: #183C35
+   Cream:        #F5F0E6
+   Terracotta:   #C78D68
+   White:        #FFFFFF
+ */
+
+
+/* kanang asterisk maonay universal selector gi select niya all HTML elements sa webpage */
+* {
+    margin: 0;  /* zero para walay gaps inside/outside spacing */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* inig scroll para smooth char gi translate raman */
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    font-family: 'Segoe UI', Arial, sans-serif; /* mga fonts na nagamit ni madam */
+
+    background-color: #102c03;
+    color: #303B36;
+
+    line-height: 1.7;
+}
+
+
+/* navbar mao ni ang pinaka babaw sa website */
+
+.navbar {
+    width: 100%;
+    padding: 22px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #183C35;
+    color: #FFFFFF;
+}
+
+.navbar h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+
+.navbar span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #D9CDBB;
+}
+
+
+/* MAIN CONTAINER conatrols the main page width and spacing */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+ /* unsa may difference ana nilang duha ba 
+ padding is the space between the picture and the frame; margin is the space between that frame and another object. */
+    margin: 0 auto;
+    padding: 55px 35px;
+}
+
+
+/* intro, yopak na ser huhuhuh */
+
+.hero {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+
+    align-items: center;
+    gap: 45px;
+
+    width: 100%;
+    padding: 50px;
+
+    background-color: #FFFFFF;
+
+    border-radius: 20px;
+    margin-bottom: 85px;
+
+    box-shadow: 0 10px 35px rgba(24, 60, 53, 0.06);
+}
+
+.hero-text {
+    width: 100%;
+    min-width: 0;
+}
+
+.eyebrow {
+    color: #C78D68;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(35px, 4vw, 55px);
+
+    line-height: 1.2;
+
+    color: #183C35;
+
+    margin-bottom: 20px;
+
+    overflow-wrap: break-word;
+}
+
+.hero h1 span {
+    color: #C78D68;
+}
+
+.description {
+    max-width: 600px;
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    color: #68736C;
+
+    margin-bottom: 28px;
+}
+
+
+
+/* diri ay diko kahibaw mo edit2 sa kadak on*/
+
+.hero-decoration {
+    width: 100%;
+    min-width: 0;
+    min-height: 390px;
+
+    background-color: #183C35;
+    color: #F5F0E6;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* PROFILE IMAGE FRAME aw diri diay baw sir i give up, mo basa lagi ka aning comments sir or not */
+
+.profile-frame {
+    width: 100px;
+    height: 100px;
+
+    flex: 0 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 100px 100px 15px 15px;
+
+    border: 4px solid #D9B99C;
+
+    margin-bottom: 18px;
+}
+
+
+/* ACTUAL PROFILE IMAGE aw kani diay oy HAHAHAHHHA bawsww*/
+
+.profile-photo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+
+/* PROFILE INITIALS */
+
+.initials {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    color: #D9B99C;
+
+    letter-spacing: 5px;
+
+    line-height: 1.2;
+}
+
+
+/* PROFILE DECORATIVE TEXT */
+
+.hero-decoration p {
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #F5F0E6;
+
+    margin-top: 8px;
+}
+
+.hero-decoration > span {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #C8B9A5;
+
+    margin-top: 16px;
+}
+
+
+/* General Section Headings
+Used above Education, Skills, and My Interests */
+
+.section {
+    width: 100%;
+    margin-bottom: 85px;
+}
+
+.section-heading {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.section-heading span {
+    color: #C78D68;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    color: #183C35;
+
+    margin-top: 5px;
+}
+
+
+/* educ background kanang 4 ka cards */
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+
+    width: 100%;
+
+    align-items: stretch;
+}
+
+
+/* INDIVIDUAL EDUCATION CARD */
+
+.info-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 225px;
+
+    background-color: #FFFFFF;
+
+    padding: 23px;
+
+    border-radius: 16px;
+
+    border: 1px solid #E8E0D5;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(24, 60, 53, 0.08);
+}
+
+
+/* EDUCATION NUMBERS */
+
+.number {
+    color: #C78D68;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+
+/* EDUCATION TITLES */
+
+.info-card h3 {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    color: #183C35;
+
+    margin-bottom: 10px;
+
+    overflow-wrap: break-word;
+}
+
+
+/* SCHOOL INFORMATION */
+
+.info-card p {
+    width: 100%;
+
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: #68736C;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* CURRENTLY STUDYING LABEL */
+
+.status {
+    display: inline-block;
+
+    background-color: #E5EEE7;
+    color: #37634D;
+
+    padding: 6px 11px;
+
+    border-radius: 30px;
+
+    font-size: 10px;
+
+    margin-top: 15px;
+}
+
+
+/* skills and interests */
+
+.two-columns {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    width: 100%;
+
+    align-items: stretch;
+}
+
+
+/* SKILLS AND HOBBIES BOXES */
+
+.content-panel {
+    width: 100%;
+    min-width: 0;
+
+    background-color: #FFFFFF;
+
+    padding: 32px;
+
+    border-radius: 16px;
+
+    border: 1px solid #E8E0D5;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: all 0.3s ease;
+}
+
+.content-panel:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 25px rgba(24, 60, 53, 0.07);
+}
+
+
+/* HOBBIES BOX */
+
+.hobby-panel {
+    background-color: #EAE4D8;
+}
+
+
+/* HEADINGS INSIDE BOXES */
+
+.content-panel .section-heading {
+    margin-bottom: 10px;
+}
+
+.content-panel .section-heading h2 {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    color: #183C35;
+
+    margin-top: 8px;
+}
+
+
+/* SKILLS AND HOBBIES LIST */
+
+.item-list {
+    list-style: none;
+
+    width: 100%;
+
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+
+/* INDIVIDUAL LIST ITEMS */
+
+.item-list li {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #E5DED3;
+
+    color: #303B36;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.item-list li:last-child {
+    border-bottom: none;
+}
+
+
+/* DECORATIVE STAR */
+
+.item-list li::before {
+    content: "✦";
+
+    color: #C78D68;
+
+    font-size: 12px;
+
+    margin-right: 14px;
+
+    flex-shrink: 0;
+}
+
+
+/* HOVER EFFECT */
+
+.item-list li:hover {
+    color: #C78D68;
+    padding-left: 7px;
+}
+
+
+/* contact me */
+
+.contact-section {
+    width: 100%;
+
+    background-color: #183C35;
+    color: #FFFFFF;
+
+    padding: 65px 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.contact-section .eyebrow {
+    color: #D18F6D;
+}
+
+.contact-section h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(27px, 4vw, 38px);
+
+    color: #FFFFFF;
+
+    margin-bottom: 12px;
+}
+
+.contact-section > p:not(.eyebrow) {
+    font-size: 14px;
+    color: #D9DCD7;
+}
+
+
+/* CONTACT INFORMATION CONTAINER */
+
+.contact-details {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    width: 100%;
+
+    margin: 28px auto 0;
+}
+
+
+/* EMAIL AND PHONE */
+
+.contact-details a {
+    color: #E3C3A5;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: all 0.3s ease;
+
+    overflow-wrap: anywhere;
+}
+
+.contact-details a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+
+/* tiil */
+
+footer {
+    width: 100%;
+
+    background-color: #183C35;
+    color: #F5F0E6;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+/* DECORATIVE LINE */
+
+footer::before {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 2px;
+
+    background-color: #C78D68;
+
+    margin: 0 auto 22px;
+}
+
+
+/* FOOTER TEXT */
+
+footer p {
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    color: #D9CDBB;
+}
+
+
+/* 
+   12. TABLET RESPONSIVENESS
+ */
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        padding: 40px 25px;
+    }
+
+    .hero {
+        gap: 25px;
+        padding: 35px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .info-card {
+        padding: 25px;
+    }
+
+}
+
+
+/* 
+   13. MOBILE RESPONSIVENESS
+ */
+
+@media screen and (max-width: 768px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        padding: 20px 6%;
+    }
+
+    .navbar h2 {
+        font-size: 21px;
+    }
+
+    .navbar span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+
+    /* MAIN CONTAINER */
+
+    .container {
+        padding: 30px 18px;
+    }
+
+
+    /* INTRODUCTION */
+
+    .hero {
+        display: grid;
+
+        grid-template-columns: minmax(0, 1fr);
+
+        padding: 30px 23px;
+
+        gap: 30px;
+
+        margin-bottom: 55px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-decoration {
+        width: 100%;
+        min-height: 340px;
+    }
+
+
+    /* EDUCATION */
+
+    .section {
+        margin-bottom: 55px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .info-card {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+
+    /* SKILLS AND INTERESTS */
+
+    .two-columns {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .content-panel {
+        padding: 27px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-section {
+        padding: 45px 20px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+}
+
+
+/*
+   14. SMALL MOBILE SCREENS */
+
+@media screen and (max-width: 480px) {
+
+    .navbar span {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .hero {
+        padding: 25px 18px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    /* SMALLER PROFILE IMAGE ON MOBILE */
+
+    .profile-frame {
+        width: 100px;
+        height: 120px;
+    }
+
+    /* ONE EDUCATION CARD PER ROW */
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .content-panel {
+        padding: 22px;
+    }
+
+    .contact-section h2 {
+        font-size: 25px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+}
